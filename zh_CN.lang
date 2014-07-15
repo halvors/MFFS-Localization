@@ -4,8 +4,8 @@
 itemGroup.MFFS=模块化力场系统
 
 # Death Messages
-death.attack.areaDefense=%1$s罔顾警告结果被分解掉了。
-death.attack.fieldShock=%1$s被力场分解掉了。
+death.attack.areaDefense=#1罔顾警告结果被分解掉了。
+death.attack.fieldShock=#1被力场分解掉了。
 
 # Blocks
 tile.mffs:fortronite.name=力场矿
