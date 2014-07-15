@@ -10,14 +10,14 @@ death.attack.areaDefense=#1 ignorierte Warnungen und wurde desintegriert.
 death.attack.fieldShock=#1 wurde von einem Kraftfeld desintegriert.
 
 message.cardFrequency.generated=Willkürliche Frequenz generiert:
-message.cardFrequency.set=Frequenz auf %p gesetzt
-message.remoteController.linked=Verbunden bei Position: %p mit Block: %q
-message.remoteController.fail=Erhalt von %p vom Fortron-Feld fehlgeschlagen.
+message.cardFrequency.set=Frequenz auf #p gesetzt
+message.remoteController.linked=Verbunden bei Position: #p mit Block: #q
+message.remoteController.fail=Erhalt von #p vom Fortron-Feld fehlgeschlagen.
 message.moduleAntiPersonnel.death=Leb wohl.
-message.moduleConfiscate.confiscate=%p deiner Item wurde(n) konfisziert.
+message.moduleConfiscate.confiscate=#p deiner Item wurde(n) konfisziert.
 message.moduleWarn.warn=Verlasse diese Zone sofort. Du hast kein Recht, sie zu betreten.
 message.interdictionMatrix.warn=Warnung! Du bist nahe der Scan-Reichweite!
-message.modeCustom.modeChange=Auswählmodus zu %p geändert
+message.modeCustom.modeChange=Auswählmodus zu #p geändert
 message.modeCustom.saved=Feldstruktur gepeichert.
 
 # Blocks

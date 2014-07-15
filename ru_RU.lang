@@ -6,18 +6,18 @@ itemGroup.MFFS=Modular Force Field System
 fluid.fortron=Фортрон
 
 # Chat Messages
-death.attack.areaDefense=%1$s пренебрёг предупреждениями и распался.
-death.attack.fieldShock=%1$s распался благодаря силовому полю.
+death.attack.areaDefense=#1 пренебрёг предупреждениями и распался.
+death.attack.fieldShock=#1 распался благодаря силовому полю.
 
 message.cardFrequency.generated=Создана случайная частота:
-message.cardFrequency.set=Частота установлена на: %p
-message.remoteController.linked=Соединён с позицией: %p с блоком: %q
-message.remoteController.fail=Невозможно использовать %p из фортронного поля.
+message.cardFrequency.set=Частота установлена на: #p
+message.remoteController.linked=Соединён с позицией: #p с блоком: #q
+message.remoteController.fail=Невозможно использовать #p из фортронного поля.
 message.moduleAntiPersonnel.death=Прощайте.
-message.moduleConfiscate.confiscate=%p из Ваших предмет(ов) конфискованы.
+message.moduleConfiscate.confiscate=#p из Ваших предмет(ов) конфискованы.
 message.moduleWarn.warn=Немедленно покиньте эту зону. У вас нет права на вход.
 message.interdictionMatrix.warn=Внимание! Вы рядом с диапазоном сканирования!
-message.modeCustom.modeChange=Режим выбора изменён на %p
+message.modeCustom.modeChange=Режим выбора изменён на #p
 message.modeCustom.saved=Структура поля сохранена.
 
 # Blocks
