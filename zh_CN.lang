@@ -1,20 +1,32 @@
 # Modular Force Field System Language Properties for zh_CN
-# @author Fr0stbyteR
+# @author Fr0stbyteR and sb023612
 
 itemGroup.MFFS=模块化力场系统
 
-# Death Messages
+fluid.fortron=Fortron
+
+# Chat Messages
 death.attack.areaDefense=#1罔顾警告结果被分解掉了。
 death.attack.fieldShock=#1被力场分解掉了。
+message.cardFrequency.generated=已产生随机频率:
+message.cardFrequency.set=频率设置成: #p
+message.remoteController.linked=已连接至坐标: #p 所连接方块: #q
+message.remoteController.fail=无法管理所聚合力场内的#p.
+message.moduleAntiPersonnel.death=永别了.
+message.moduleConfiscate.confiscate=你的#p已经被充公.
+message.moduleWarn.warn=立即离开这个区域. 你无权进入.
+message.interdictionMatrix.warn=警告! 你正在接近扫描范围!
+message.modeCustom.modeChange=已将选定力场模式改变为#p
+message.modeCustom.saved=力场结构已保存.
 
 # Blocks
 tile.mffs:fortronite.name=力场矿
 tile.mffs:biometricIdentifier.name=生物辨识机
 tile.mffs:interdictionMatrix.name=封锁矩阵
 tile.mffs:fortronCapacitor.name=形态转换电容
-tile.mffs:projector.name=力场投影机
+tile.mffs:electromagneticProjector.name=力场投影机
 tile.mffs:coercionDeriver.name=强制驱动器
-tile.mffs:manipulator.name=力场操控器
+tile.mffs:forceMobilizer.name=力场移动器
 tile.mffs:forceField.name=力场
 
 
@@ -60,7 +72,7 @@ item.mffs:moduleSpeed.tooltip=提高设备速度。
 ## Force Field Projector Modules
 item.mffs:moduleShock.name=震荡模块
 item.mffs:moduleSponge.name=海绵模块
-item.mffs:moduleManipulator.name=力场之手模块
+item.mffs:moduleDome.name=圆顶模块
 item.mffs:moduleFusion.name=力场融合模块
 item.mffs:moduleCamouflage.name=伪装模块
 item.mffs:moduleCamouflage.tooltip=使力场能够伪装成其他方块,配合分解模块使用可以反转分解模块的过滤设置.
@@ -89,8 +101,8 @@ item.mffs:moduleAntiFriendly.name=动物封锁模块
 item.mffs:moduleAntiFriendly.tooltip=制造出封锁力场来杀死动物等友善生物。
 item.mffs:moduleAntiHostile.name=怪物封锁模块
 item.mffs:moduleAntiHostile.tooltip=制造出封锁力场来杀死敌对生物。
-item.mffs:moduleWarn.name=警告模块
-item.mffs:moduleWarn.tooltip=向入侵者发出警告。
+item.mffs:moduleBroadcast.name=广播模块
+item.mffs:moduleBroadcast.tooltip=广播一条信息给力场内的所有玩家.
 item.mffs:moduleConfiscate.name=收缴模块
 item.mffs:moduleConfiscate.tooltip=收缴入侵者的物品。
 item.mffs:moduleBlockAccess.name=禁止操作模块
@@ -106,6 +118,7 @@ item.mffs:itemMultiTool.name=多功能工具
 # GUI
 gui.frequency.name=频率
 gui.frequency.tooltip=相同频率的机器共享形态转换能源。
+gui.frequency.random=随机频率
 gui.progress.name=进程
 gui.fortron.name=力场能
 gui.fortron.tooltip=力场能是mffs设备专用的一种能源形式。
@@ -114,7 +127,18 @@ gui.matrix.name=矩阵
 gui.matrix.tooltip=投影矩阵用于定义如何投影力场。
 gui.master.name=拥有者
 gui.master.tooltip=拥有者卡片将会记录名字的玩家设置为生物辨识机的主人
+gui.deriver.derive=导出
+gui.deriver.integrate=整合
+gui.deriver.running=正在运行
+gui.deriver.idle=闲置
+gui.mobilizer.anchor=锚
+gui.mobilizer.time=传送时间
 
+gui.energy=能量
+gui.direction=方向
+gui.makecopy=复制
+gui.input.name=输入
+gui.output.name=输出
 # Capacitor
 gui.linkedDevice.name=链接设备
 gui.linkedDevice.tooltip=链接到该机器的设备数目。
@@ -124,14 +148,14 @@ gui.transmissionRate.name=转换率
 gui.transmissionRate.tooltip=电容器转换成力场能的速率。
 
 ## Transfer Modes
-gui.transferModeEqualize.name=平衡
-gui.transferModeEqualize.tooltip=以机器的电容百分数为标准分配形态转换能。
-gui.transferModeDistribute.name=均一
-gui.transferModeDistribute.tooltip=向所有设备传输相等能量。
-gui.transferModeDrain.name=输出
-gui.transferModeDrain.tooltip=快速输出能量并平衡分配给设备。
-gui.transferModeFill.name=充能
-gui.transferModeFill.tooltip=补充电容器能量,并输出多余能量。
+gui.transferMode.equalize.name=平衡
+gui.transferMode.equalize.tooltip=以机器的电容百分数为标准分配形态转换能。
+gui.transferMode.distribute.name=均一
+gui.transferMode.distribute.tooltip=向所有设备传输相等能量。
+gui.transferMode.drain.name=输出
+gui.transferMode.drain.tooltip=快速输出能量并平衡分配给设备。
+gui.transferMode.fill.name=充能
+gui.transferMode.fill.tooltip=补充电容器能量,并输出多余能量。
 
 # Permissions
 gui.rights.name=基本权限
@@ -151,10 +175,36 @@ gui.bypassConfiscation.tooltip=使得玩家能保留物品地通过力场。
 gui.remoteControl.name=远程控制
 gui.remoteControl.tooltip=允许玩家远程操控设备。
 
-# Interdiction Matrix
-gui.filterMode.name=筛选
-gui.filterMode.tooltip=筛选指定物品/方块的模式。
-gui.warn.name=警告
-gui.warn.tooltip=设置封锁矩阵给予玩家警告的范围。
-gui.action.name=执行
-gui.action.tooltip=设置封锁矩阵执行模块指定动作的范围。
+# Force Field Projector
+gui.projector.mode=模式
+gui.projector.up=上
+gui.projector.down=下
+gui.projector.north=北
+gui.projector.south=南
+gui.projector.east=东
+gui.projector.west=西
+gui.projector.front=前
+gui.projector.back=后
+gui.projector.left=左
+gui.projector.right=右
+
+# Custom Mode
+info.modeCustom.mode=模式:
+info.modeCustom.substraction=减法
+info.modeCustom.additive=加法
+info.modeCustom.point1=点1:
+info.modeCustom.point2=点2:
+info.modeCustom.modeID=模式ID:
+info.modeCustom.fieldSize=力场面积:
+info.modeCustom.notSaved=力场未保存.
+info.modeCustom.shift=按住shift查看更多...
+
+# More tooltips
+info.module.defense=防御模块
+info.item.linkedWith=连接至:
+info.item.dimension=维度:
+info.item.notLinked=未连接.
+info.item.fortron=聚合:
+info.cardFrequency.freq=频率:
+info.cardIdentification.username=用户名:
+info.cardIdentification.empty=未识别
