@@ -8,12 +8,13 @@ fluid.fortron=Fortron
 # Chat Messages
 death.attack.areaDefense=#1罔顾警告结果被分解掉了。
 death.attack.fieldShock=#1被力场分解掉了。
+
 message.cardFrequency.generated=已产生随机频率:
 message.cardFrequency.set=频率设置成: #p
 message.remoteController.linked=已连接至坐标: #p 所连接方块: #q
 message.remoteController.fail=无法管理所聚合力场内的#p.
-message.moduleAntiPersonnel.death=永别了.
-message.moduleConfiscate.confiscate=你的#p已经被充公.
+message.moduleAntiPersonnel.death=你已被肢解,永别了.
+message.moduleConfiscate.confiscate=你的%s已经被没收充公.
 message.moduleWarn.warn=立即离开这个区域. 你无权进入.
 message.interdictionMatrix.warn=警告! 你正在接近扫描范围!
 message.modeCustom.modeChange=已将选定力场模式改变为#p
@@ -201,7 +202,7 @@ info.modeCustom.shift=按住shift查看更多...
 
 # More tooltips
 info.module.defense=防御模块
-info.item.linkedWith=连接至:
+info.item.linkedWith=连接至: %s
 info.item.dimension=维度:
 info.item.notLinked=未连接.
 info.item.fortron=聚合:
