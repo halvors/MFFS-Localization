@@ -13,8 +13,8 @@ message.cardFrequency.generated=Создана случайная частота
 message.cardFrequency.set=Частота установлена на: #p
 message.remoteController.linked=Соединён с позицией: #p с блоком: #q
 message.remoteController.fail=Невозможно использовать #p из фортронного поля.
-message.moduleAntiPersonnel.death=Прощайте.
-message.moduleConfiscate.confiscate=#p из Ваших предмет(ов) конфискованы.
+message.moduleAntiPersonnel.death=Вы распалась. Прощайте.
+message.moduleConfiscate.confiscate=%s из Ваших предмет(ов) конфискованы.
 message.moduleWarn.warn=Немедленно покиньте эту зону. У вас нет права на вход.
 message.interdictionMatrix.warn=Внимание! Вы рядом с диапазоном сканирования!
 message.modeCustom.modeChange=Режим выбора изменён на #p
@@ -203,7 +203,7 @@ info.modeCustom.shift=Удерживайте shift для более...
 
 # More tooltips
 info.module.defense=Модуль защиты
-info.item.linkedWith=Соединено с:
+info.item.linkedWith=Соединено с: %s
 info.item.dimension=Измерение:
 info.item.notLinked=Не соединено.
 info.item.fortron=Фортрон:
