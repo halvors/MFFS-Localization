@@ -1,7 +1,7 @@
 # Modular Force Field System Language Properties
 # @author Calclavia
 
-itemGroup.MFFS=Modular Force Field System
+itemGroup.mffs=Modular Force Field System
 
 fluid.fortron=Fortron
 
@@ -21,100 +21,99 @@ message.modeCustom.modeChange=Changed selection mode to #p
 message.modeCustom.saved=Field structure saved.
 
 # Blocks
-tile.mffs:fortronite.name=Fortronite
-tile.mffs:biometricIdentifier.name=Biometric Identifier
-tile.mffs:interdictionMatrix.name=Interdiction Matrix
-tile.mffs:fortronCapacitor.name=Fortron Capacitor
-tile.mffs:electromagneticProjector.name=Electromagnetic Projector
-tile.mffs:coercionDeriver.name=Coercion Deriver
-tile.mffs:forceMobilizer.name=Force Mobilizer
-tile.mffs:forceField.name=Force Field
+tile.fortronite.name=Fortronite
+tile.biometric.name=Biometric Identifier
+tile.fortronCapacitor.name=Fortron Capacitor
+tile.projector.name=Electromagnetic Projector
+tile.coercionDeriver.name=Coercion Deriver
+tile.mobilizer.name=Force Mobilizer
+tile.forceField.name=Force Field
 
 
 # Cards
-item.mffs:cardBlank.name=Blank Card
-item.mffs:cardInfinite.name=Infinite Power Card
-item.mffs:cardInfinite.tooltip=The infinite power card is a creative-only item that can be placed inside a capacitor for infinite energy.
-item.mffs:cardFrequency.name=Frequency Card
-item.mffs:cardFrequency.tooltip=The frequency card defines the Fortron transmission frequency. Configure with shift-right click.
-item.mffs:cardLink.name=Link Card
-item.mffs:cardLink.tooltip=Right clicking the link card on a block will create a link to that specific position.
-item.mffs:cardIdentification.name=Identification Card
-item.mffs:cardIdentification.tooltip=Right click on the ID card to biometrically lock it to your name.
+item.cardBlank.name=Blank Card
+item.cardInfinite.name=Infinite Power Card
+item.cardInfinite.tooltip=The infinite power card is a creative-only item that can be placed inside a capacitor for infinite energy.
+item.cardFrequency.name=Frequency Card
+item.cardFrequency.tooltip=The frequency card defines the Fortron transmission frequency. Configure with shift-right click.
+item.cardLink.name=Link Card
+item.cardLink.tooltip=Right clicking the link card on a block will create a link to that specific position.
+item.cardIdentification.name=Identification Card
+item.cardIdentification.tooltip=Right click on the ID card to biometrically lock it to your name.
 
 #Items
-item.mffs:remoteController.name=Remote Controller
-item.mffs:fortron.name=Fortron
-item.mffs:focusMatrix.name=Focus Matrix
+item.remote.name=Remote Controller
+item.fortron.name=Fortron
+item.focusMatrix.name=Focus Matrix
 
 #Projection Modes
-item.mffs:modeCube.name=Cube Mode
-item.mffs:modeTube.name=Tube Mode
-item.mffs:modeSphere.name=Sphere Mode
-item.mffs:modePyramid.name=Pyramid Mode
-item.mffs:modeCylinder.name=Cylinder Mode
-item.mffs:modeCustom.name=Custom Mode
-item.mffs:modeCustom.tooltip=Create your own mode by right clicking two points to define an area. Shift right click to save the area.
+item.modeCube.name=Cube Mode
+item.modeTube.name=Tube Mode
+item.modeSphere.name=Sphere Mode
+item.modePyramid.name=Pyramid Mode
+item.modeCylinder.name=Cylinder Mode
+item.modeCustom.name=Custom Mode
+item.modeCustom.tooltip=Create your own mode by right clicking two points to define an area. Shift right click to save the area.
 
 # Modules
 ## General Modules
-item.mffs:moduleScale.name=Scale Module
-item.mffs:moduleScale.tooltip=The scale module increases the scale of a certain component.
-item.mffs:moduleTranslate.name=Translation Module
-item.mffs:moduleTranslate.tooltip=The translation module translates the field, displacing it away from the origin.
-item.mffs:moduleRotate.name=Rotation Module
-item.mffs:moduleRotate.tooltip=The rotation module rotates a field with a specific angle.
+item.moduleScale.name=Scale Module
+item.moduleScale.tooltip=The scale module increases the scale of a certain component.
+item.moduleTranslate.name=Translation Module
+item.moduleTranslate.tooltip=The translation module translates the field, displacing it away from the origin.
+item.moduleRotate.name=Rotation Module
+item.moduleRotate.tooltip=The rotation module rotates a field with a specific angle.
 
-item.mffs:moduleCapacity.name=Capacity Module
-item.mffs:moduleCapacity.tooltip=Increases the capacity of a device.
-item.mffs:moduleSpeed.name=Speed Module
-item.mffs:moduleSpeed.tooltip=Increases the speed of a device.
+item.moduleCapacity.name=Capacity Module
+item.moduleCapacity.tooltip=Increases the capacity of a device.
+item.moduleSpeed.name=Speed Module
+item.moduleSpeed.tooltip=Increases the speed of a device.
 
 ## Force Field Projector Modules
-item.mffs:moduleShock.name=Shock Module
-item.mffs:moduleSponge.name=Sponge Module
-item.mffs:moduleDome.name=Dome Module
-item.mffs:moduleFusion.name=Field Fusion Module
-item.mffs:moduleCamouflage.name=Camouflage Module
-item.mffs:moduleCamouflage.tooltip=Camouflages the force field. Using this module with the disintegration module inverts the disintegration filter.
-item.mffs:moduleDisintegration.name=Disintegration Module
-item.mffs:moduleDisintegration.tooltip=Disintegrates the blocks space occupied by the force field and drops them.
-item.mffs:moduleGlow.name=Glow Module
-item.mffs:moduleStabilize.name=Field Stabilizer Module
-item.mffs:moduleStabilize.tooltip=Stabilizes the projected force field and crystallizes the field into solid blocks. Place a chest next the projector with blocks to stablize the field.
-item.mffs:moduleCollection.name=Collection Module
-item.mffs:moduleCollection.tooltip=Collection module allows you to collect dropped blocks from the disintegration module.
-item.mffs:moduleInvert.name=Invert Module
-item.mffs:moduleInvert.tooltip=Inverts the field to use negative space instead of the positive space.
-item.mffs:moduleSilence.name=Silence Module
-item.mffs:moduleSilence.tooltip=Silences the force field and prevents it from making sound. Also prevents the Interdiction Matrix from sending warning messages.
-item.mffs:moduleRepulsion.name=Repulsion Module
-item.mffs:moduleRepulsion.tooltip=Creates an entity repulsion field with no blocks.
-item.mffs:moduleArray.name=Array Module
-item.mffs:moduleArray.tooltip=Repeats the field in a pattern specified by direction.
-item.mffs:moduleApproximation.name=Approximation Module
-item.mffs:moduleApproximation.tooltip=Causes the field to approximate and ignore metadata when stabilizing or disintegrating.
+item.moduleShock.name=Shock Module
+item.moduleSponge.name=Sponge Module
+item.moduleDome.name=Dome Module
+item.moduleFusion.name=Field Fusion Module
+item.moduleCamouflage.name=Camouflage Module
+item.moduleCamouflage.tooltip=Camouflages the force field. Using this module with the disintegration module inverts the disintegration filter.
+item.moduleDisintegration.name=Disintegration Module
+item.moduleDisintegration.tooltip=Disintegrates the blocks space occupied by the force field and drops them.
+item.moduleGlow.name=Glow Module
+item.moduleStabilize.name=Field Stabilizer Module
+item.moduleStabilize.tooltip=Stabilizes the projected force field and crystallizes the field into solid blocks. Place a chest next the projector with blocks to stablize the field.
+item.moduleCollection.name=Collection Module
+item.moduleCollection.tooltip=Collection module allows you to collect dropped blocks from the disintegration module.
+item.moduleInvert.name=Invert Module
+item.moduleInvert.tooltip=Inverts the field to use negative space instead of the positive space.
+item.moduleSilence.name=Silence Module
+item.moduleSilence.tooltip=Silences the force field and prevents it from making sound. Also prevents the Interdiction Matrix from sending warning messages.
+item.moduleRepulsion.name=Repulsion Module
+item.moduleRepulsion.tooltip=Creates an entity repulsion field with no blocks.
+item.moduleArray.name=Array Module
+item.moduleArray.tooltip=Repeats the field in a pattern specified by direction.
+item.moduleApproximation.name=Approximation Module
+item.moduleApproximation.tooltip=Causes the field to approximate and ignore metadata when stabilizing or disintegrating.
 
 ## Interdiction Matrix Modules
-item.mffs:moduleAntiPersonnel.name=Anti-Personnel Module
-item.mffs:moduleAntiPersonnel.tooltip=Will cause Interdiction Matrix to kill all players.
-item.mffs:moduleAntiFriendly.name=Anti-Friendly Module
-item.mffs:moduleAntiFriendly.tooltip=Will cause Interdiction Matrix to kill all friendly mobs.
-item.mffs:moduleAntiHostile.name=Anti-Hostile Module
-item.mffs:moduleAntiHostile.tooltip=Will cause Interdiction Matrix to kill all hostile mobs.
-item.mffs:moduleBroadcast.name=Broadcast Module
-item.mffs:moduleBroadcast.tooltip=Broadcasts a message to everyone within the field.
-item.mffs:moduleConfiscate.name=Confiscate Module
-item.mffs:moduleConfiscate.tooltip=Confiscates the intruder's items.
-item.mffs:moduleBlockAccess.name=Block Access Module
-item.mffs:moduleBlockAccess.tooltip=Prevents an intruder from right clicking on blocks.
-item.mffs:moduleBlockAlter.name=Block Alter Module
-item.mffs:moduleBlockAlter.tooltip=Prevents an intruder from placing or breaking blocks.
-item.mffs:moduleAntiSpawn.name=Anti-Spawn Module
-item.mffs:moduleAntiSpawn.tooltip=Prevents entities from spawning in a specific region.
+item.moduleAntiPersonnel.name=Anti-Personnel Module
+item.moduleAntiPersonnel.tooltip=Will cause Interdiction Matrix to kill all players.
+item.moduleAntiFriendly.name=Anti-Friendly Module
+item.moduleAntiFriendly.tooltip=Will cause Interdiction Matrix to kill all friendly mobs.
+item.moduleAntiHostile.name=Anti-Hostile Module
+item.moduleAntiHostile.tooltip=Will cause Interdiction Matrix to kill all hostile mobs.
+item.moduleBroadcast.name=Broadcast Module
+item.moduleBroadcast.tooltip=Broadcasts a message to everyone within the field.
+item.moduleConfiscate.name=Confiscate Module
+item.moduleConfiscate.tooltip=Confiscates the intruder's items.
+item.moduleBlockAccess.name=Block Access Module
+item.moduleBlockAccess.tooltip=Prevents an intruder from right clicking on blocks.
+item.moduleBlockAlter.name=Block Alter Module
+item.moduleBlockAlter.tooltip=Prevents an intruder from placing or breaking blocks.
+item.moduleAntiSpawn.name=Anti-Spawn Module
+item.moduleAntiSpawn.tooltip=Prevents entities from spawning in a specific region.
 
 # Multitool
-item.mffs:itemMultiTool.name=Multi-Tool
+item.itemMultiTool.name=Multi-Tool
 
 # GUI
 gui.frequency.name=Frequency
