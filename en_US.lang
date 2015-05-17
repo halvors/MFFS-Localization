@@ -141,12 +141,9 @@ gui.input.name=Input
 gui.output.name=Output
 
 # Capacitor
-gui.linkedDevice.name=Linked Device
-gui.linkedDevice.tooltip=The amount of devices linked to this machine.
-gui.range.name=Range
-gui.range.tooltip=The range can be upgraded with a range module.
-gui.transmissionRate.name=Transmission Rate
-gui.transmissionRate.tooltip=The rate in which this capacitor can transfer fortron energy.
+gui.linkedDevice=Device linked: %1
+gui.range=Fortron transmit range: $1
+gui.transmissionRate=Fortron transmit rate: %1
 
 ## Transfer Modes
 gui.transferMode.equalize.name=Equalize
